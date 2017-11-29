@@ -3,31 +3,51 @@
 <head>
 	<meta charset="utf-8">
 	<title>The Jewel Game</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">  
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	
 	
 </head>
 <body>
-  <h1>Crystals Collector!</h1>
-  <p>You will be given a random number at the start of the game.</p>
-  <p>There are four crystals below. By clicking on a crystal you will add a sepcific amount of points to your total score.</p>
-  <p>You win the game by matching your total score to ranndom number, you lose the game if your total score goes above the random number.</p>
-  <p>The value of each crystal is hidden from you until you click on it.
-    Each time when the game starts, the game will change the values of each crystal.</p>
-    <div id="number">Number: </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container"> <!-- This is the container -->
+      <a id="logo">Crystals Collector!</a>
+    </div>
+  </header>
+
+  <!-- Instructions -->
+  <section class="main-section">
+    <p>You will be given a random number at the start of the game.</p>
+    <p>There are four crystals below. By clicking on a crystal you will add a sepcific amount of points to your total score.</p>
+    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+    <p>The value of each crystal is hidden from you until you click on it.</p>                  
+    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+  </section>
+  
+  <!-- Line of Scores -->
+  <div id="number">39: </div>
+
+  <section class="containerScores">
 	<div id="wins">Wins: </div>
 	<div id="loss">Losses: </div>
-	<section class="boxJewel">
-	  <div id="jewel_1">J1</div>
-	  <div id="jewel_2">J2</div>
-	  <div id="jewel_3">J3</div>
-	  <div id="jewel_4">J4</div>
-	  <div id="scoreTotal">Your Total Score Is:</div>
-	  <div id="score">#</div>
-    </section>
+  </section>
 
+  <!-- Boxes for crystals --> 	
+  <div class="boxJewel" id="jewel_1">J1</div>
+  <div class="boxJewel" id="jewel_2">J2</div>
+  <div class="boxJewel" id="jewel_3">J3</div>
+  <div class="boxJewel" id="jewel_4">J4</div>
+
+<!-- Total Score  -->
+  <div class="totScore">Your Total Score Is:</div>
+  <div class="totScore" id="score">#</div>
+
+
+
+<!-- JQuery -->
 <script  src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<!-- Javascript -->
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
