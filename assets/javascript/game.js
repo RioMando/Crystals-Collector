@@ -27,11 +27,12 @@
     	win++;
     	console.log("Win value: " + win);
     	$("#wins").html("Wins: " + win);
+    	$("#scoret").html(scoreTotal + ". Congrats, you win!");
     	initValues();
     } else if ( number < scoreTotal ){
     	loss++;
     	$("#loss").html("Losses: " + loss);
-    	$("#scoret").html(scoreTotal + " You Lost!");
+    	$("#scoret").html(scoreTotal + " You lost. Try again!");
     	initValues();
     }
   };
